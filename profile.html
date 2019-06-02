@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <script src="https://kit.fontawesome.com/3931ee8abc.js"></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/main.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/profile.css" />
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webly</title>
+</head>
+
+<!-- Header -->
+<header class="main-header">
+    <nav class="white">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo grey-text text-darken-3">Web<span class="ly white-text blue">ly</span>
+                    <span class="vert-div grey-text text-lighten-1">|</span>
+                </a>
+                <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="" class="grey-text text-darken-5 active-link"><i class="far fa-comment"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dropdown Structure -->
+    <ul id="avatar" class="dropdown-content right">
+        <li><a href="#" class="grey-text text-darken-3">My Profile</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="grey-text text-darken-3">Logout</a></li>
+    </ul>
+
+    <!-- Navigation for Pages -->
+
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12 hide-on-med-and-down">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/bg2.jpg" style="height: 200px;max-width:100%;max-height: 200px;">
+                        <!-- <span class="card-title white-text " style="font-weight: 420;font-size: 30px;">John Doe</span> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col s12 m3">
+                <!-- number of posts -->
+                <div class="col s3 m6">
+                    <div class="card center">
+                        <div class="card-content">
+                            <h6 style="color: #4c84ff;font-weight:560;">450</h6>
+                            <p style="color:#7a7a7a;">Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- number of followers -->
+                <div class="col s3 m6">
+                    <div class="card center">
+                        <div class="card-content">
+                            <h6 style="color: #4c84ff;font-weight:560;">2.1K</h6>
+                            <p style="color:#7a7a7a;">Followers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- number of follwing -->
+                <div class="col s3 m6">
+                    <div class="card center">
+                        <div class="card-content">
+                            <h6 style="color: #4c84ff;font-weight:560;">865</h6>
+                            <p style="color:#7a7a7a;">Following</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- number of likes -->
+                <div class="col s3 m6">
+                    <div class="card center">
+                        <div class="card-content">
+                            <h6 style="color: #4c84ff;font-weight:560;">121</h6>
+                            <p style="color:#7a7a7a;">Likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+
+                <div class="card">
+                    <div class="card-panel">
+                        <div id="chartContainer" style="height: 170px;width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="card" style="top: 60%;">
+                    <div class="card-image">
+                        <img src="img/person1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="bold-letter">John Doe</h5>
+                        <p style="color:#7a7a7a;">UI/UX Designer</p>
+                        <a href="#!"><i class="fab fa-twitter black-text"></i></a>
+                        <a href="#!"><i class="fab fa-facebook black-text"></i></a>
+                        <a href="#!"><i class="fab fa-instagram black-text"></i></a>
+                        <a href="#!"><i class="fab fa-youtube black-text"></i></a>
+                    </div>
+                    <div class="card-action red white-text center">
+                        <a href="#" class="bold-letter" style="color:white;font-size: 15px;font-weight: 500;">Sign
+                            out</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- <footer class="white grey-text center">
+      <div class="content">
+        www.webly.ph &copy; 2019 Copyright
+      </div>
+  </footer> -->
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script>
+
+        $('.dropdown-trigger').dropdown({
+            constrainWidth: false,
+            hover: true,
+            belowOrigin: true,
+            alignment: 'left'
+        });
+
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "Engagements for this Year"
+                },
+                axisY: {
+                    title: "Number of Engagments",
+                    suffix: "",
+                    includeZero: false
+                },
+                axisX: {
+                    title: "Months"
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,##0#\" engagements\"",
+                    dataPoints: [
+                        { label: "January", y: 500, color: "#4C84FF7c" },
+                        { label: "February", y: 478, color: "#4C84FF7c" },
+                        { label: "March", y: 256, color: "#4C84FF7c" },
+                        { label: "April", y: 370, color: "#4C84FF7c" },
+                        { label: "May", y: 621, color: "#4C84FF7c" },
+                        { label: "June", y: 72, color: "#4C84FF7c" },
+                        { label: "July", y: 0, color: "#4C84FF7c" },
+                        { label: "August", y: 0, color: "#4C84FF7c" }
+
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+
+
+    </script>
+</body>
+
+</html>
