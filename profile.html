@@ -48,72 +48,168 @@
 
 <body>
     <div class="container">
-        <div class="row">
 
-            <div class="col s12 hide-on-med-and-down">
+        <div class="row">
+            <div class="col s12">
                 <div class="card">
-                    <div class="card-image">
+                    <div class="card-image" style="max-height: 190px;">
                         <img src="img/bg2.jpg" style="height: 200px;max-width:100%;max-height: 200px;">
                         <!-- <span class="card-title white-text " style="font-weight: 420;font-size: 30px;">John Doe</span> -->
+                        <img src="img/person1.jpg" style="height: 10%; width: 10%;top: -110px;left:20px;"
+                            class="hide-on-small-and-down">
+                        <span class="card-title white-text hide-on-small-and-down"
+                            style="left: 110px;top: 80px;font-weight: 500;">John Doe</span>
+                        <span class="card-title hide-on-small-and-down"
+                            style="color:#cececef1;left: 110px;top: 110px;font-size: 13px;">UI/UX
+                            Designer</span>
+                        <div class="card-title black-text lighten-5 hide-on-small-and-down"
+                            style="left: 110px;top: 130px;font-size: 15px;">
+
+                            <a href="#!"><i class="fab fa-twitter black-text"> </i></a>
+                            <a href="#!"><i class="fab fa-facebook black-text"> </i></a>
+                            <a href="#!"><i class="fab fa-instagram black-text"> </i></a>
+                            <a href="#!"><i class="fab fa-youtube black-text"> </i></a>
+                        </div>
 
                     </div>
                 </div>
+
             </div>
         </div>
 
         <div class="row">
+            <div class="col s12 m8">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs card">
+                            <li class="tab col s4" style="background-color: white;">
+                                <a href="#tab1" style="color: #4c84ff;font-weight: 520;">Posts</a>
+                            </li>
 
-            <div class="col s12 m3">
-                <!-- number of posts -->
-                <div class="col s3 m6">
-                    <div class="card center">
-                        <div class="card-content">
-                            <h6 style="color: #4c84ff;font-weight:560;">450</h6>
-                            <p style="color:#7a7a7a;">Posts</p>
+                            <li class="tab col s4" style="background-color: white;">
+                                <a href="#tab2" style="color: #4c84ff;font-weight: 520;">Connections</a>
+                            </li>
+
+                            <li class="tab col s4" style="background-color: white;">
+                                <a href="#tab3" style="color: #4c84ff;font-weight: 520;">Favorites</a>
+                            </li>
+
+                        </ul>
+                        <!-- Posts -->
+                        <div id="tab1" class="col s12 card large">
+                            <h5 style="color: rgb(32, 31, 30);font-weight:500;">Posts</h5>
                         </div>
-                    </div>
-                </div>
-                <!-- number of followers -->
-                <div class="col s3 m6">
-                    <div class="card center">
-                        <div class="card-content">
-                            <h6 style="color: #4c84ff;font-weight:560;">2.1K</h6>
-                            <p style="color:#7a7a7a;">Followers</p>
+                        <!-- connections -->
+                        <div id="tab2" class="col s12 card large">
+                            <h5 style="color: rgb(32, 31, 30);font-weight:500;">Connections</h5>
+                            <div class="col s6 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/person2.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title black-text">
+                                            <h6 style="font-weight: 500;">Mark Will</h6>
+                                        </span>
+                                        <span class="card-title" style="color:#838383;top: -200px;font-size: 13px;">Web
+                                            Developer</span>
+                                        <br>
+                                        <div class="card-action center" style="background-color: #4c84ff;color: white;">
+                                            <a href="#" style="color: white;">Visit Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/person3.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title black-text">
+                                            <h6 style="font-weight: 500;">Ellen Stewart</h6>
+                                        </span>
+                                        <span class="card-title"
+                                            style="color:#838383;top: -200px;font-size: 13px;">UI/UX Designer</span>
+                                        <br>
+                                        <div class="card-action center" style="background-color: #4c84ff;color: white;">
+                                            <a href="#" style="color: white;">Visit Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/person4.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title black-text">
+                                            <h6 style="font-weight: 500;">Gary Rock</h6>
+                                        </span>
+                                        <span class="card-title" style="color:#838383;top: -200px;font-size: 13px;">Full
+                                            Stack Developer</span>
+                                        <br>
+                                        <div class="card-action center" style="background-color: #4c84ff;color: white;">
+                                            <a href="#" style="color: white;">Visit Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <!-- number of follwing -->
-                <div class="col s3 m6">
-                    <div class="card center">
-                        <div class="card-content">
-                            <h6 style="color: #4c84ff;font-weight:560;">865</h6>
-                            <p style="color:#7a7a7a;">Following</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- number of likes -->
-                <div class="col s3 m6">
-                    <div class="card center">
-                        <div class="card-content">
-                            <h6 style="color: #4c84ff;font-weight:560;">121</h6>
-                            <p style="color:#7a7a7a;">Likes</p>
+                        <!-- favorites -->
+                        <div id="tab3" class="col s12 card large">
+                            <h5 style="color: rgb(32, 31, 30);font-weight:500;">Favorites</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam ipsum
+                                distinctio
+                                odit dolore
+                                asperiores</p>
+                            doloremque dolorem recusandae nihil minus.
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col s12 m6">
-
-                <div class="card">
+            <div class="col s12 m4">
+                <div class="card hide-on-small-only">
                     <div class="card-panel">
                         <div id="chartContainer" style="height: 170px;width: 100%;">
                         </div>
                     </div>
                 </div>
+
             </div>
 
+            <div class="col s12 m4">
+
+                <div class="card">
+                    <div class="card-panel">
+                        <span class="card-title"
+                            style="font-size: 17px;font-weight:500;color:rgba(73, 73, 73, 0.781);">Personal
+                            Info</span>
+                    </div>
+                    <div class="card-panel">
+
+                        <span style="color: #6e6a6a;"><i class="material-icons tiny">home</i> 21 Oakwood CA,
+                            USA</span>
+                        <br>
+                        <span style="color: #6e6a6a;"><i class="material-icons tiny">event</i> Joined August
+                            2018</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
             <div class="col s12 m3">
-                <div class="card" style="top: 60%;">
+                <div class="card hide-on-med-and-up">
                     <div class="card-image">
                         <img src="img/person1.jpg">
                     </div>
@@ -126,22 +222,34 @@
                         <a href="#!"><i class="fab fa-youtube black-text"></i></a>
                     </div>
                     <div class="card-action red white-text center">
-                        <a href="#" class="bold-letter" style="color:white;font-size: 15px;font-weight: 500;">Sign
+                        <a href="#" style="color:white;font-size: 16px;font-weight: 500;">Sign
                             out</a>
                     </div>
                 </div>
             </div>
 
+
+
+
+            <!-- end of first row -->
         </div>
 
+
+        <!-- end of container -->
     </div>
 
 
-    <!-- <footer class="white grey-text center">
-      <div class="content">
-        www.webly.ph &copy; 2019 Copyright
-      </div>
-  </footer> -->
+
+
+
+
+
+
+    <footer class="white grey-text center">
+        <div class="content">
+            www.webly.ph &copy; 2019 Copyright
+        </div>
+    </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
