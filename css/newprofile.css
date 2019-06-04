@@ -1,0 +1,71 @@
+.bodyfont {
+    font-size: 14px;
+    font-family: 'sf pro display light';
+}
+
+.h1font {
+    font-size: 48px;
+    font-family: 'sf pro display semibold';
+}
+
+.h2font {
+    font-size: 36px;
+    font-family: 'sf pro display semibold';
+   
+}
+
+.summ {
+    font-size: 15px;
+    font-family: 'sf pro display semibold';
+}
+
+.smoltxt {
+    font-size: 1px;
+    font-family: 'sf pro display semibold';
+}
+
+.cont {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cont1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.white-txt {
+    color: #a9a8a8;
+}
+
+.grey-txt {
+    color: #adaeae;
+}
+
+.yellow-txt {
+    color: #e1bb00;
+}
+
+.blue-txt {
+    color: #005892;
+}
+
+.green-txt {
+    color: #01ab5d;
+}
+
+.origblue {
+    color: #4C84FF;
+}
+
+.card-border {
+    border: 1px solid #e0e0e0 !important;
+}
+
+.no-card-border {
+    border: 0px !important;
+}
