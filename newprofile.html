@@ -19,28 +19,39 @@
 </head>
 
 <!-- Header -->
+<!-- Header -->
 <header class="main-header">
-    <nav class="white">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo grey-text text-darken-3">Web<span
-                        class="ly white-text blue">ly</span>
-                    <span class="vert-div grey-text text-lighten-1">|</span>
-                </a>
-                <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="grey-text text-darken-5 active-link"><i class="far fa-comment"></i></a></li>
-                </ul>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper row">
+                    <div class="col s12 m4">
+                        <a href="#!" class="brand-logo grey-text text-darken-3">Web<span
+                                class="ly white-text blue">ly</span>
+                            <span class="vert-div grey-text text-lighten-1 hide-on-med-and-down">|</span>
+                        </a>
+
+                        <a href="#!" data-activates="slide-out" class="button-collapse">
+                            <i class="material-icons menu-color">menu</i>
+                        </a>
+
+                    </div>
+
+
+
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Dropdown Structure -->
-    <ul id="avatar" class="dropdown-content right ">
-        <li><a href="#" class="grey-text text-darken-3">My Profile</a></li>
-        <li class="divider"></li>
-        <li><a href="#" class="grey-text text-darken-3">Logout</a></li>
-    </ul>
-    <!-- Navigation for Pages -->
+        </nav>
+
+
+
+
+    </div>
+
+
+
+
+
 </header>
 <!-- start of body -->
 
@@ -48,11 +59,11 @@
 
     <div class="container">
         <br>
+       
         <div class="row">
-
             <!-- card for image profile -->
-            <div class="card-profile col s12 m3">
-                <div class="card z-depth-0">
+            <div class="card-profile col s12 m3 hide-on-small-and-down">
+                <div class="card z-depth-0 pinned">
                     <div class="card white grey-text text-darken-3 card-border z-depth-0 ">
                         <div class="card-image circle">
                             <img src="img/person1.jpg">
@@ -74,16 +85,19 @@
                             </div>
                             <div class="divider"></div>
                             <br>
-                            <span><i class="material-icons">place</i> <label> #21 Oakwook San Jose
-                                    CA.</label></span><br>
-                            <span><i class="material-icons">date/event</i> <label> Joined August 2018</label></span><br>
-                            <span><i class="material-icons">cake</i> <label> March 28, 1996</label></span><br>
-                            <span><i class="material-icons">link</i> <label>github.com/johndoe</label></span><br>
+                            <span><i class="material-icons tiny">place</i> <label> #21 Oakwook
+                                    CA. USA</label></span><br>
+                            <span><i class="material-icons tiny">event</i> <label> Joined August 2018</label></span><br>
+                            <span><i class="material-icons tiny">cake</i> <label> March 28, 1996</label></span><br>
+                            <span><i class="material-icons tiny">link</i> <label><a
+                                        href="">github.com/johndoe</a></label></span><br>
                         </div>
-                    </div>
-                </div>
-                <a href="#!" class="waves-effect waves-light btn-large hoverable"
+                    </div> 
+                    <a href="#!" class="waves-effect waves-light btn-large hoverable"
                     style="width: 100%;height:50px;background-color: #ff0909e7;">Logout</a>
+            
+                </div>
+           
             </div>
 
             <!-- card for summary -->
@@ -107,7 +121,7 @@
 
                 <div class="card-panel z-depth-0 card-border grey lighten-3">
                     <div class="card-title summ">
-                        Summary
+                        About Myself
                     </div>
                     <span class="black-txt bodyfont">I am a very simple card. I am good at containing small bits of
                         information.
@@ -190,31 +204,34 @@
             </div>
 
             <!-- card graph -->
-            <div class="col s12 m3">
-                <div class="card cont center  card-border z-depth-0">
-                    <span class="card-title" style="font-size: 15px;font-weight: 500;">My Stats</span>
+            <div class="col s12 m3 ">
+
+                <div class="card cont center  card-border z-depth-0 ">
+                    <p class="center">My Stats</p>
                     <div class="card-content">
                         <div id="chartContainer" style="height: 160px; width: 100%;"></div>
                     </div>
                 </div>
 
-               
-                    <div class="card cont  card-border z-depth-0">
-                        <span class="card-title" style="font-size: 18px;font-weight: 500;">Skills</span>
-                        <div class="card-content">Languages:
-                            <label for="">C, C++, Ruby, Java, C#, PHP, ASP.net</label>
-                            <br>
-                            Platforms:
-                            <label for="">Windows, MacOs, Linux</label>
-                            <br>
-                            Server side:
-                            <label for="">MySQL, MS SQL, Mongol DB</label>
-                        </div>
-                    </div>
-                
 
-                <div class="card cont center z-depth-0">
-                    <span class="card-title" style="font-size: 15px;font-weight: 500;">People you might know</span>
+
+                <div class="card cont card-border z-depth-0">
+                    <!-- <span class="card-title" style="font-size: 18px;font-weight: 500;">Skills</span> -->
+                    <p class="center">Skills</p>
+                    <div class="card-content">Languages:
+                        <label for="">C, C++, Ruby, Java, C#, PHP, ASP.net</label>
+                        <br>
+                        Platforms:
+                        <label for="">Windows, MacOs, Linux</label>
+                        <br>
+                        Server side:
+                        <label for="">MySQL, MS SQL, Mongol DB</label>
+                    </div>
+                </div>
+
+
+                <div class="card cont center z-depth-0 card-border">
+                        <p class="center">People you might know</p>
                     <ul class="collection no-card-border">
 
                         <li class="collection-item avatar no-card-border" style="min-height: 63px;">
